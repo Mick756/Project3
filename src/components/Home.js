@@ -43,20 +43,20 @@ function Home() {
             <div className="Shadow App-header">Friend Finder</div>
             <div className="Button-Container">
 
-                {/*<Router>*/}
-                {/*    <Link to="/signup">*/}
+                <Router>
+                    <Link to="/signup">
                         <button className="btn Shadow Home-Page-Button" id="signUp" onClick={() => {  }}>Sign Up</button>
-                    {/*</Link>*/}
-                    {/*<Link to="/login">*/}
+                    </Link>
+                    <Link to="/login">
                         <button className="btn Shadow Home-Page-Button" id="login">Login</button>
-                    {/*</Link>*/}
-                    {/*<Link to="/search">*/}
+                    </Link>
+                    <Link to="/search">
                         <button className="btn Shadow Home-Page-Button" id="Search">Search</button>
-                    {/*</Link>*/}
-                    {/*<Link to="/friends">*/}
+                    </Link>
+                    <Link to="/friends">
                         <button className="btn Shadow Home-Page-Button" id="Friends">Friends</button>
-                {/*    </Link>*/}
-                {/*</Router>*/}
+                    </Link>
+                </Router>
             </div>
 
             <div className="Shadow App-header-2">

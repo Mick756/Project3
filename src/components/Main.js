@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import '../styles/home.css';
 
 import Home from './Home.js';
@@ -9,11 +9,15 @@ function Main() {
 
     return (
         <Router>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/signup" component={SignUp}/>
-            <Route exact path="/login"/>
-            <Route exact path="/search"/>
-            <Route exact path="/friends"/>
+            <div>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/signup" component={SignUp}/>
+                    <Route exact path="/login"/>
+                    <Route exact path="/search"/>
+                    <Route exact path="/friends"/>
+                </Switch>
+            </div>
         </Router>
     );
 }
