@@ -42,8 +42,6 @@ function Home() {
         <div className="App">
             <div className="Shadow App-header">Friend Finder</div>
             <div className="Button-Container">
-
-                <Router>
                     <Link to="/signup">
                         <button className="btn Shadow Home-Page-Button" id="signUp" onClick={() => {  }}>Sign Up</button>
                     </Link>
@@ -56,7 +54,6 @@ function Home() {
                     <Link to="/friends">
                         <button className="btn Shadow Home-Page-Button" id="Friends">Friends</button>
                     </Link>
-                </Router>
             </div>
 
             <div className="Shadow App-header-2">
